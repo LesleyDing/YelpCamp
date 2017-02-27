@@ -60,6 +60,28 @@
 * Add public directory
 * Add custom stylesheet
 
+##Authentication (update in v4)
+###Add User Model
+* Install all packages needed for auth
+* Define User model
+
+###Register
+* Configure Passport
+* Add register routes
+* Add register template
+
+###Login
+* Add login routes
+* Add login template
+
+###Logout/Navbar
+* Add logout route
+* Prevent user from adding a comment if not signed in
+* Add links to navbar
+
+###Show/Hide Links
+* Show/hide auth links in navbar correctly
+
 
 #RESTFUL ROUTES
 name      url                          verb    desc.
