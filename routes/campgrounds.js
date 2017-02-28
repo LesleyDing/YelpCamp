@@ -21,17 +21,21 @@ router.get("/", function(req, res){
 });
 
 // NEW ROUTE
-router.get("/new", function(req, res){
+router.get("/new", isLoggedIn, function(req, res){
     res.render("campgrounds/new");
 });
 
 // CREATE ROUTE
-router.post("/", function(req, res){
+router.post("/", isLoggedIn, function(req, res){
     // create the campground
     Campground.create(req.body.campground, function(err, newCampground){
         if (err){
             console.log(err);
         } else {
+            // add username and id to campground
+            newCampground.author.id = req.user._id;
+            newCampground.author.username = req.user.username;
+            newCampground.save(); // save the campground
             res.redirect("/"); //redirect to the index
         }
     });
@@ -49,5 +53,14 @@ router.get("/:id", function(req, res) {
         }
     });
 });
+
+// middleware for checking login status
+function isLoggedIn(req, res, next){
+    if(req.isAuthenticated()){
+        return next();
+    }
+    res.redirect("/login");
+}
+
 
 module.exports = router;

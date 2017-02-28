@@ -34,9 +34,12 @@ router.post("/", isLoggedIn, function(req, res){
                     console.log(err);
                     res.redirect("/campgrounds");
                 } else {
-                    console.log(newComment)
-                    campground.comments.push(newComment);
-                    campground.save();
+                    // add username and id to comment
+                    newComment.author.id = req.user._id;
+                    newComment.author.username = req.user.username;
+                    newComment.save(); // save the comment
+                    campground.comments.push(newComment); // save the comments to the campground
+                    campground.save(); // save the campground
                     res.redirect('/campgrounds/' + campground._id); //redirect to the index
                 }
             });
