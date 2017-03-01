@@ -2,6 +2,7 @@ var express               = require("express"),
     app                   = express(),
     bodyParser            = require("body-parser"),
     mongoose              = require("mongoose"),
+    methodOverride        = require("method-override"),
     passport              = require("passport"),
     LocalStrategy         = require("passport-local"),
     passportLocalMongoose = require("passport-local-mongoose"),
@@ -15,15 +16,16 @@ var indexRoutes     = require("./routes/index"),
     campgroundRoutes = require("./routes/campgrounds");
 
 // APP CONFIG
-mongoose.connect("mongodb://localhost/YelpCampV6");
+mongoose.connect("mongodb://localhost/YelpCampV7");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
+app.use(methodOverride("_method"));
 // seedDB(); // run the function from the seeds file
 
 // PASSPORT CONFIG
 app.use(require("express-session")({
-    secret: "Rusty is the best and cutest dog in the world",
+    secret: "Lesley is the smartest husky in the world",
     resave: false,
     saveUninitialized: false
 }));

@@ -84,3 +84,43 @@
 
 ##Refactor The Routes (update in v5)
 * Use Express router to reoragnize all routes
+
+## User Associations (update in v6)
+###Users add Comments
+* Associate users and comments
+* Save author's name to a comment automatically
+
+###Users add Campgrounds
+* Prevent an unauthenticated user from creating a campground
+* Save username+id to newly created campground
+
+##Editing/Deleting Campgrounds and comments with Authorization (update in v7)
+###Editing Campgrounds
+* Add Method-Override
+* Add Edit Route for Campgrounds
+* Add Link to Edit Page
+* Add Update Route
+
+###Deleting Campgrounds
+* Add Destroy Route
+* Add Delete button
+
+###Authorization for Campgrounds
+* User can only edit his/her campgrounds
+* User can only delete his/her campgrounds
+* Hide/Show edit and delete buttons
+
+###Editing Comments
+* Add Edit route for comments
+* Add Edit button
+* Add Update route
+
+###Deleting Comments
+* Add Destroy route
+* Add Delete button
+
+###Authorization for Comments
+* User can only edit his/her comments
+* User can only delete his/her comments
+* Hide/Show edit and delete buttons
+* Refactor Middleware
