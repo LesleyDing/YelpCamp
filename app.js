@@ -20,7 +20,8 @@ var indexRoutes     = require("./routes/index"),
     campgroundRoutes = require("./routes/campgrounds");
 
 // APP CONFIG
-mongoose.connect("mongodb://localhost/YelpCampV8");
+var url =process.env.DATABASEURL || "mongodb://localhost/YelpCampV8";
+mongoose.connect(url);
 app.use(bodyParser.urlencoded({extended: true})); 
 app.set("view engine", "ejs"); 
 app.use(express.static(__dirname + "/public"));

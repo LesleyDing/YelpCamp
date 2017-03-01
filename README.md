@@ -1,6 +1,5 @@
 #YelpCamp
 
-
 ##Initial Setup (built in v1)
 * Add Landing Page
 * Add Campgrounds Page that lists all campgrounds
@@ -9,58 +8,53 @@
 * Create our header and footer partials
 * Add in Bootstrap
 
-##Creating New Campgrounds (built in v1)
+###Style the Navbar and Form
+* Add a navbar to all templates
+* Style the new campground form
+
+##Create New Campgrounds (built in v1)
 * Setup new campground POST route
 * Add in body-parser
 * Setup route to show form
 * Add basic unstyled form
 
-##Style the campgrounds page (built in v1)
+###Style the campgrounds page
 * Add a better header/title
 * Make campgrounds display in a grid
 
-##Style the Navbar and Form (built in v1)
-* Add a navbar to all templates
-* Style the new campground form
-
-##Add Mongoose (update in v2)
+##Add Mongoose (updated in v2)
 * Install and configure Mongoose
 * Setup campground model
 * Use campground model inside of our routes
 
-##Show Page (update in v2)
+##Show Page (updated in v2)
 * Review the RESTful routes we've seen so far
 * Add description to our campground model
 * Show db.collection.drop()
 * Add a show route/template
 
-##Refactor Mongoose Code (update in v3)
+##Refactor Mongoose Code (updated in v3)
 * Create a models directory
 * Use module.exports
 * Require everything correctly!
 
-##Add Seeds File (update in v3)
-* Add a seeds.js file
-* Run the seeds file every time the server starts
-
-##Add the Comment model! (update in v3)
-* Make our errors go away!
+##Add Comments (updated in v3)
+###Add Comment model
+* Define Comment model
 * Display comments on campground show page
 
-##Comment New/Create (update in v3)
+###Comment New/Create (updated in v3)
 * Discuss nested routes
 * Add the comment new and create routes
 * Add the new comment form
 
-##Style Show Page (update in v3)
+##Style Show Page (updated in v3)
 * Add sidebar to show page
 * Display comments nicely
-
-##Finish Styling Show Page (update in v3)
 * Add public directory
 * Add custom stylesheet
 
-##Authentication (update in v4)
+##Authentication (updated in v4)
 ###Add User Model
 * Install all packages needed for auth
 * Define User model
@@ -82,10 +76,10 @@
 ###Show/Hide Links
 * Show/hide auth links in navbar correctly
 
-##Refactor The Routes (update in v5)
+##Refactor The Routes (updated in v5)
 * Use Express router to reoragnize all routes
 
-##User Associations (update in v6)
+##User Associations (updated in v6)
 ###Users add Comments
 * Associate users and comments
 * Save author's name to a comment automatically
@@ -94,7 +88,7 @@
 * Prevent an unauthenticated user from creating a campground
 * Save username+id to newly created campground
 
-##Editing/Deleting Campgrounds and comments with User Authorization (update in v7)
+##Edit/Delete Campgrounds and Comments with User Authorization (updated in v7)
 ###Editing Campgrounds
 * Add Method-Override
 * Add Edit Route for Campgrounds
@@ -125,7 +119,7 @@
 * Hide/Show edit and delete buttons
 * Refactor Middleware
 
-##UI Improvements (update in v8)
+##UI Improvements (updated in v8)
 ###Adding in Flash
 * Install and configure connect-flash
 * Add bootstrap alerts to header
@@ -137,3 +131,11 @@
 * Add price to campground model as a Number datatype
 * Add price to views/campgrounds/new.ejs and views/campgrounds/edit.ejs
 * Add price to views/campgrounds/show.ejs
+
+--------------------------------------------------------------------------
+##Deploying
+* Upload files to Heroku
+* Connect mongoose to mlab
+
+--------------------------------------------------------------------------
+##Customized Features (tbc)
