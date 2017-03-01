@@ -85,7 +85,7 @@
 ##Refactor The Routes (update in v5)
 * Use Express router to reoragnize all routes
 
-## User Associations (update in v6)
+##User Associations (update in v6)
 ###Users add Comments
 * Associate users and comments
 * Save author's name to a comment automatically
@@ -94,7 +94,7 @@
 * Prevent an unauthenticated user from creating a campground
 * Save username+id to newly created campground
 
-##Editing/Deleting Campgrounds and comments with Authorization (update in v7)
+##Editing/Deleting Campgrounds and comments with User Authorization (update in v7)
 ###Editing Campgrounds
 * Add Method-Override
 * Add Edit Route for Campgrounds
@@ -124,3 +124,16 @@
 * User can only delete his/her comments
 * Hide/Show edit and delete buttons
 * Refactor Middleware
+
+##UI Improvements (update in v8)
+###Adding in Flash
+* Install and configure connect-flash
+* Add bootstrap alerts to header
+
+###Adding a Landing Page
+* Add a animation of images
+
+###Adding Dynamic Price Feature
+* Add price to campground model as a Number datatype
+* Add price to views/campgrounds/new.ejs and views/campgrounds/edit.ejs
+* Add price to views/campgrounds/show.ejs

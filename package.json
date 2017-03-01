@@ -4,12 +4,14 @@
   "description": "yelpcamp v1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
   },
   "author": "Hanzhi Ding",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.16.0",
+    "connect-flash": "^0.1.1",
     "ejs": "^2.5.5",
     "express": "^4.14.0",
     "express-session": "^1.15.1",
