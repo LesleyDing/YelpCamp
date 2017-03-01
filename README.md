@@ -88,7 +88,7 @@
 * Prevent an unauthenticated user from creating a campground
 * Save username+id to newly created campground
 
-##Edit/Delete Campgrounds and Comments with User Authorization (updated in v7)
+##Edit/Delete Campgrounds and Comments with Authorization (updated in v7)
 ###Editing Campgrounds
 * Add Method-Override
 * Add Edit Route for Campgrounds
